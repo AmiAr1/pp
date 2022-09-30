@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{object.name}}
+{% endblock  %}
+{% block main %}
+<div class="container-lg mt-3">
+  <h1 class="card-title m-4">{{object.name}}</h1>
+  <div class="mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{object.image.url}}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body m-4">
+                <p class="card-text">{{object.description}}</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+{% endblock  %}
