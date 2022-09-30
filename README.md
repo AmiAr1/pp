@@ -1,13 +1,5 @@
 # Парсер
-
-Нужно скачать redis (переопределить порты, если ОС Windows)
-
-Команда запуска celery
-```Linux
-celery -A config worker -l info
-```
-
-Инструкция запуска 
+## Инструкция запуска 
 ```Docker
 sudo apt install redis # скачиваем redis
 cd workdir/doramy_top/ # вход в рабочую директорию
@@ -18,3 +10,5 @@ cd src/ # вход в папку с Django-проектом
 python3 manage.py runserver # запуск проекта
 celery -A config worker -l info # запуск Celery
 ```
+
+`workdir` - путь до проекта
